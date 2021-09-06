@@ -1,0 +1,46 @@
+@import url('./reset.css');
+
+$siteSearchHeight: 50px;
+$siteSearchWidth: 200px;
+$siteSearchBgColor: #535353;
+$siteSearchInputHeight: 36px;
+$siteSearchBtnWidth: 45px;
+$siteSearchBtnBgColor: #3071a9;
+
+@mixin hover-cursor {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.container {
+
+    .site-search {
+        padding-right: 24px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: $siteSearchHeight;
+        background-color: $siteSearchBgColor;
+
+        input {
+            height: $siteSearchInputHeight;
+            width: $siteSearchWidth;
+            max-height: $siteSearchInputHeight;
+            border: none;
+            padding: 0 6px 0 6px;
+            border-radius: 4px;
+        }
+
+        .search-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: $siteSearchBtnWidth;
+            height: $siteSearchInputHeight;
+            background-color: $siteSearchBtnBgColor;
+            border-radius: 4px;
+            @include hover-cursor();
+        }
+    }
+}
