@@ -1,20 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TRT Müzik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./sass/style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="site-search">
-            <input type="text" placeholder="Sitede Ara...">
-            <div class="search-btn">
-                <img src="./imgs/search-icon-white.png" alt="search icon">
+            <div class="wrapper">
+                <input type="text" placeholder="Sitede Ara...">
+                <div class="search-btn">
+                    <img src="./imgs/search-icon-white.png" alt="search icon">
+                </div>
             </div>
+
+        </div>
+        <nav>
+            <div class="wrapper">
+                <div class="logo">
+                    <img src="./imgs/trtmuzik-logo-white.png" alt="">
+                </div>
+                <div class="menu">
+                    <ul class="large-menu">
+                        <li><a href="#">PROGRAMLAR</a></li>
+                        <li><a href="#"> YAYIN AKIŞI</a></li>
+                        <li><a href="#">HABERLER</a></li>
+                        <li><a href="#">İLETİŞİM</a></li>
+                        <li><a href="#">TRT DİNLE</a></li>
+                        <li><a href="#">CANLI <br> İZLE</a></li>
+                    </ul>
+
+                    <div class="bar-icon" id="barBtn">
+                        <div class="item-wrapper">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <div class="small-menu">
+            <ul>
+                <li><a href="#">PROGRAMLAR</a></li>
+                <li><a href="#"> YAYIN AKIŞI</a></li>
+                <li><a href="#">HABERLER</a></li>
+                <li><a href="#">İLETİŞİM</a></li>
+                <li><a href="#">TRT DİNLE</a></li>
+                <li><a href="#">CANLI İZLE</a></li>
+            </ul>
         </div>
     </div>
+
+    <script src="./js/index.js"></script>
 </body>
+
 </html>
