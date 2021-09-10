@@ -1,0 +1,25 @@
+.pagination{
+    display: flex;
+    align-items: flex-end;
+
+    &__list{
+        display: flex;
+        padding: 6px 12px;
+        font-weight: 800;
+    }
+
+    &__item{
+        width: 31px;
+        height: 31px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.8);
+        margin-left: 3px;
+        @include hover-cursor();
+
+        &:hover{
+            background-color: gray;
+        }
+    }
+}

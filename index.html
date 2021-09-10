@@ -9,59 +9,166 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./sass/style.css">
+    <link rel="stylesheet" href="./sass/main.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="site-search">
-            <div class="wrapper">
-                <input type="text" placeholder="Sitede Ara...">
-                <div class="search-btn">
-                    <img src="./imgs/search-icon-white.png" alt="search icon">
+        <header>
+            <div class="site-search">
+                <div class="search">
+                    <input type="text" placeholder="Sitede Ara...">
+                    <div class="search-btn">
+                        <img src="./imgs/search-icon-white.png" alt="search icon">
+                    </div>
                 </div>
             </div>
+            <nav>
+                <div class="navigation">
+                    <div class="logo">
+                        <img src="./imgs/trtmuzik-logo-white.png" alt="">
+                    </div>
+                    <div class="menu">
+                        <ul class="menu__large">
+                            <li class="menu__large-item"><a href="#">PROGRAMLAR</a></li>
+                            <li class="menu__large-item"><a href="#"> YAYIN AKIŞI</a></li>
+                            <li class="menu__large-item"><a href="#">HABERLER</a></li>
+                            <li class="menu__large-item"><a href="#">İLETİŞİM</a></li>
+                            <li class="menu__large-item"><a href="#">TRT DİNLE</a></li>
+                            <li class="menu__large-item"><a href="#">CANLI <br> İZLE</a></li>
+                        </ul>
 
-        </div>
-        <nav>
-            <div class="wrapper">
-                <div class="logo">
-                    <img src="./imgs/trtmuzik-logo-white.png" alt="">
-                </div>
-                <div class="menu">
-                    <ul class="large-menu">
-                        <li><a href="#">PROGRAMLAR</a></li>
-                        <li><a href="#"> YAYIN AKIŞI</a></li>
-                        <li><a href="#">HABERLER</a></li>
-                        <li><a href="#">İLETİŞİM</a></li>
-                        <li><a href="#">TRT DİNLE</a></li>
-                        <li><a href="#">CANLI <br> İZLE</a></li>
-                    </ul>
-
-                    <div class="bar-icon" id="barBtn">
-                        <div class="item-wrapper">
-                            <div class="item"></div>
-                            <div class="item"></div>
-                            <div class="item"></div>
+                        <div class="bar-icon" id="barBtn">
+                            <div class="bar-icon__wrapper">
+                                <div class="bar-icon__item"></div>
+                                <div class="bar-icon__item"></div>
+                                <div class="bar-icon__item"></div>
+                            </div>
                         </div>
+
+                        <ul class="menu__small">
+                            <li class="menu__small-item"><a href="#">PROGRAMLAR</a></li>
+                            <li class="menu__small-item"><a href="#"> YAYIN AKIŞI</a></li>
+                            <li class="menu__small-item"><a href="#">HABERLER</a></li>
+                            <li class="menu__small-item"><a href="#">İLETİŞİM</a></li>
+                            <li class="menu__small-item"><a href="#">TRT DİNLE</a></li>
+                            <li class="menu__small-item"><a href="#">CANLI İZLE</a></li>
+                        </ul>
                     </div>
 
+
+                </div>
+            </nav>
+        </header>
+
+        <div class="body">
+            <div class="body__wrapper">
+                <div class="body__left">
+                    <div class="slider">
+                        <div class="slider__new-level">
+                            <h1>YENİ BÖLÜM</h1>
+                        </div>
+                        <div class="slider__image-wrapper">
+                            <img src="./imgs/slider-1.png" alt="" class="slider__image">
+                            <img src="./imgs/slider-1.png" alt="" class="slider__image">
+                            <img src="./imgs/slider-1.png" alt="" class="slider__image">
+                        </div>
+                        
+                        <div class="slider__wrapper">
+                            
+                            <div class="slider__time">
+                                <h1 class="slider__time-clock">19:00</h1>
+                                <span class="slider__time-day">cuma</span>
+                            </div>
+                            <div class="pagination">
+                                <ul class="pagination__list">
+                                    <li class="pagination__item"><a href="">1</a></li>
+                                    <li class="pagination__item"><a href="">2</a></li>
+                                    <li class="pagination__item"><a href="">3</a></li>
+                                    <li class="pagination__item"><a href="">4</a></li>
+                                    <li class="pagination__item"><a href="">5</a></li>
+                                    <li class="pagination__item"><a href="">6</a></li>
+                                    <li class="pagination__item"><a href="">7</a></li>
+                                    <li class="pagination__item"><a href="">8</a></li>
+                                    <li class="pagination__item"><a href="">9</a></li>
+                                    <li class="pagination__item"><a href="">10</a></li>
+                                    <li class="pagination__item"><a href="">11</a></li>
+                                    <li class="pagination__item"><a href="">12</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="slider__footer">
+                            <h1 class="slider__header">Bestehan</h1>
+                            <p class="slider__text">Mehmet Kemiksiz ile Türk müziği ve tasavvuf musikisine ait eserler... </p>
+                        </div>
+                    </div>
+                    <div class="programs">
+
+                    </div>
+                    <div class="best-10-clip">
+
+                    </div>
+                </div>
+                <div class="body__right">
+                    <div class="highlights">
+                        <h1 class="body__header">ÖNE ÇIKANLAR</h1>
+                        <div class="card-type-1">
+                            <img src="./imgs/highlights-1.jpg" alt="" class="card-type-1__image">
+                            <h1 class="card-type-1__header">
+                                Mazhar Alanson İle
+                            </h1>
+                        </div>
+                        <div class="card-type-1">
+                            <img src="./imgs/highlights-2.jpg" alt="" class="card-type-1__image">
+                            <h1 class="card-type-1__header">
+                                Gramafondan Mikrofona
+                            </h1>
+                        </div>
+                        <div class="card-type-1">
+                            <img src="./imgs/highlights-3.jpg" alt="" class="card-type-1__image">
+                            <h1 class="card-type-1__header">
+                                Laterna
+                            </h1>
+                        </div>
+                        <div class="card-type-1">
+                            <img src="./imgs/highlights-4.jpg" alt="" class="card-type-1__image">
+                            <h1 class="card-type-1__header">
+                                Uzun ince Bir Yol
+                            </h1>
+                        </div>
+                        <div class="card-type-1">
+                            <img src="./imgs/highlights-5.jpg" alt="" class="card-type-1__image">
+                            <h1 class="card-type-1__header">
+                               Sesler Alemi
+                            </h1>
+                        </div>
+                        <div class="card-type-1">
+                            <img src="./imgs/highlights-6.jpg" alt="" class="card-type-1__image">
+                            <h1 class="card-type-1__header">
+                                Cümbüşün Peşinde
+                            </h1>
+                        </div>
+                        <div class="card-type-1">
+                            <img src="./imgs/highlights-7.jpg" alt="" class="card-type-1__image">
+                            <h1 class="card-type-1__header">
+                                Nazenin
+                            </h1>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
-        <div class="small-menu">
-            <ul>
-                <li><a href="#">PROGRAMLAR</a></li>
-                <li><a href="#"> YAYIN AKIŞI</a></li>
-                <li><a href="#">HABERLER</a></li>
-                <li><a href="#">İLETİŞİM</a></li>
-                <li><a href="#">TRT DİNLE</a></li>
-                <li><a href="#">CANLI İZLE</a></li>
-            </ul>
+            <div class="news">
+
+            </div>
         </div>
+
+        <footer>
+            
+        </footer>
     </div>
 
     <script src="./js/index.js"></script>
+    <script src="./js/carousel.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,27 @@
+.body{
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+
+    &__wrapper{
+        width: $default-body-width;
+        display: flex;
+    }
+
+    &__left{
+        padding: 1%;
+        width: 66%;
+    }
+
+    &__right{
+        padding: 1%;
+        width: 34%;
+    }
+
+    &__header{
+        font-weight: 800;
+        font-size: 1.5rem;
+        color: #444;
+        margin-bottom: 16px;
+    }
+}

@@ -1,0 +1,11 @@
+header {
+
+}
+
+.site-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $site-search-height;
+    background-color: $site-search-bg-color;
+}

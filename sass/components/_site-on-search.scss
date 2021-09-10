@@ -1,0 +1,25 @@
+.search {
+    display: flex;
+    justify-content: flex-end;
+    width: $default-body-width;
+    input {
+        height: $site-search-input-height;
+        width: $site-search-width;
+        max-height: $site-search-input-height;
+        border: none;
+        padding: 0 6px 0 6px;
+        border-radius: 4px;
+    }
+
+    &-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: $site-search-btn-width;
+        height: $site-search-input-height;
+        background-color: $site-search-btn-bg-color;
+        border-radius: 4px;
+        margin-left: -5px;
+        @include hover-cursor();
+    }
+}

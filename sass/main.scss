@@ -1,0 +1,26 @@
+
+
+// Abstracts
+@import './abstracts/_mixins.scss';
+@import './abstracts/_variables.scss';
+
+@import './others/style.scss';
+
+// Base
+@import './base/_base.scss';
+@import './base/_reset.scss';
+@import './base/_utilities.scss';
+
+// Components
+@import './components/_site-on-search.scss';
+@import './components/_navigation.scss';
+@import './components/_slider.scss';
+@import './components/_highlights.scss';
+@import './components/_card-type-1.scss';
+@import './components/_pagination.scss';
+
+// Layouts
+@import './layouts/_header.scss';
+@import './layouts/_body.scss';
+
+

@@ -1,0 +1,23 @@
+.card-type-1{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 18px;
+    
+
+    &__image{
+        max-width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    &__header{
+        position: absolute;
+        padding: 5% 10%;
+        background-color: #dd293a;
+        bottom: 0;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff;
+    }
+}
