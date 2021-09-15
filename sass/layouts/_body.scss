@@ -1,7 +1,8 @@
 .body{
     margin-top: 24px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
     &__wrapper{
         width: $default-body-width;
@@ -19,9 +20,142 @@
     }
 
     &__header{
+        width: 100%;
         font-weight: 800;
         font-size: 1.5rem;
         color: #444;
-        margin-bottom: 16px;
+        margin: 32px 0 16px 0;
+        display: block;
     }
+}
+
+.programs, .best-10-clip{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.news{
+    width: $default-body-width;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $gray1;
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        width: $default-body-width; 
+        height: 100px;
+        padding: 12px 0 12px 0;
+
+        &-menu{
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+
+        &-list{
+            display: flex;
+            width: 100%;
+            margin-bottom: 12px;
+        }
+
+        &-list-2{
+            display: flex;
+            width: 100%;
+            color: $gray2;
+            text-align: left;
+        }
+
+        &-item{
+            padding: 0 6px 0 6px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #fff;
+            @include hover-cursor();
+
+            &:hover{
+                color: $red1;
+            }
+        }
+
+        &-item-2{
+            padding: 0 6px 0 6px;
+            font-size: .8rem;
+            font-weight: 400;
+            color: $gray2;
+            @include hover-cursor();
+
+            &:hover{
+                opacity: .6;
+            }
+        }
+    }
+
+    &__body{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: $gray3;
+        padding: 24px;
+
+        &-box{
+            display: flex;
+            width: $default-body-width;
+        }
+
+        &-header{
+            font-size: 1.5rem;
+            color: $gray2;
+            padding: 12px 0 12px 0;
+        }
+
+        p{
+            font-size: .8rem;
+            color: #aaa;
+            line-height: 1.5;
+
+            strong{
+                font-weight: 800;
+            }
+
+           
+
+        }
+
+        &-right{
+            width: 50%;
+        }
+
+        &-left{
+            width: 50%;
+        }
+
+        &-wrapper{
+            display: flex;
+            align-items: center;
+            line-height: 1.5;
+
+            img{
+                opacity: .3;
+                margin-right: 5px;
+                filter: grayscale(90%);
+            }
+
+            a{
+                font-size: .8rem;
+                color: #f0f0f0;
+            }
+        }
+    }
+    
+
 }

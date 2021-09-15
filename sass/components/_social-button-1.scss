@@ -1,0 +1,39 @@
+.social-button{
+    width: 128px;
+    height: 28px;
+
+    &__list{
+        display: flex;
+        justify-content: space-between; 
+    }
+
+    &__item{
+        display: block;
+        transition: color 0.1s ease-in, background 0.1s ease-in;
+        width: 28px;
+        height: 28px;
+        background: url(../imgs/sosyal.png) no-repeat;
+        background-size: 500%;
+
+        &:hover{
+            background-position-y: 0px;
+        }
+    }
+
+    &__facebook{
+        background-position: 0px -28px;
+    }
+
+    &__twitter{
+        background-position: -28px -28px;
+    }
+
+    &__youtube{
+        background-position: -56px -28px;
+    }
+
+    &__instagram{
+        background-position: -84px -28px;
+    }
+}
+

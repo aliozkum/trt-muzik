@@ -1,0 +1,32 @@
+.card-type-4{
+    width: 24%;
+    max-width: 24%;
+    height: 360px;
+    margin-bottom: 12px;
+    @include hover-cursor();
+
+    &__header{
+        font-size: 1rem;
+        font-weight: 800;
+        color: $red1;
+        height: 60px;
+        padding: 6px 0;
+
+        &:hover{
+            color: $gray1;
+        }
+    }
+
+    &__image{
+        width: 100%;
+        height: auto;
+    }
+
+    &__text{
+        padding: 6px 0;
+        font-size: .8rem;
+        line-height: 1.5;
+        color: #777;
+        text-align: justify;
+    }
+}
