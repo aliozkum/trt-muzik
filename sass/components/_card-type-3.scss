@@ -5,8 +5,12 @@
     justify-content: space-between;
     margin-bottom: 12px;
 
+    @media screen and (max-width: 768px) {
+        width: 98%;
+    }
+
     &__header{
-        width: 50%;
+        width: 180px;
         height: auto;
         position: relative;
         overflow: hidden;
@@ -32,7 +36,7 @@
     }
 
     &__body{
-        width: 50%;
+        width: calc(100% - 180px);
         height: auto;
         max-height: 117px;
         background-color: #fff;

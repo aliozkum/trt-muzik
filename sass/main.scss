@@ -4,8 +4,6 @@
 @import './abstracts/_mixins.scss';
 @import './abstracts/_variables.scss';
 
-@import './others/style.scss';
-
 // Base
 @import './base/_base.scss';
 @import './base/_reset.scss';
@@ -26,5 +24,6 @@
 // Layouts
 @import './layouts/_header.scss';
 @import './layouts/_body.scss';
+@import './layouts/_footer.scss';
 
 

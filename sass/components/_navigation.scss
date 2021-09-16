@@ -2,8 +2,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: $nav-height;
-    background-color: $nav-bg-color;
+    height: $navHeight;
+    background-color: $navBgColor;
     color: $nav-text-color;
     font-weight: $nav-font-weight;
     font-size: $nav-menu-font-size;
@@ -15,13 +15,17 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: $default-body-width;
+    width: $defaultBodyWidth;
 }
 
 .logo {
     img {
         width: $logo-width;
         height: $logo-height;
+    }
+
+    @media only screen and (max-width: $smallScreenWidth) {
+        margin-left: 2vw;
     }
 }
 
@@ -31,6 +35,10 @@ nav {
     &__large {
         display: flex;
         height: inherit;
+
+        @media only screen and (max-width: $smallScreenWidth) {
+            display: none !important;
+        }
 
         &-item {
             display: flex;
@@ -69,6 +77,14 @@ nav {
 
 .bar-icon {
     display: none;
+    height: 100%;
+    align-items: center;
+    margin-right: 2vw;
+    @include hover-cursor();
+
+    @media only screen and (max-width: $smallScreenWidth) {
+        display: flex !important;
+    }
 
     &__wrapper {
         padding: 6px;
@@ -83,6 +99,41 @@ nav {
     }
 }
 
-.menu-small{
+.menu__small {
     display: none;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #535353;
+    flex-direction: column;
+    font-weight: 800;
+    font-size: 16px;
+    color: $nav-text-color;
+    background-color: $navBgColor;
+    padding: 6px;
+
+    &-item {
+        padding: 16px;
+        @include hover-cursor();
+        border-bottom: 6px solid transparent;
+        &:hover {
+            height: calc(100% - 12px);
+            background-color: $nav-btn-hover-bg-color !important;
+            border-bottom-color: #fff;
+
+            a {
+                margin-top: 12px;
+            }
+        }
+    }
+
+    &-item:last-child {
+        background-color: $red1;
+        text-align: center;
+    }
+
+    @media screen and (min-width: $smallScreenWidth) {
+        display: none !important;
+    }
 }

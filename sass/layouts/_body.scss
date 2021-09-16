@@ -5,18 +5,27 @@
     align-items: center;
 
     &__wrapper{
-        width: $default-body-width;
+        width: $defaultBodyWidth;
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__left{
         padding: 1%;
-        width: 66%;
+        width: 65%;
+
+        @media screen and (max-width: $middleScreenWidth) {
+            width: 100%;
+        }
     }
 
     &__right{
         padding: 1%;
-        width: 34%;
+        width: 33%;
+
+        @media screen and (max-width: $middleScreenWidth) {
+            width: 100%;
+        }
     }
 
     &__header{
@@ -32,130 +41,13 @@
 .programs, .best-10-clip{
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content:space-around;
 }
 
 .news{
-    width: $default-body-width;
+    width: $defaultBodyWidth;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.footer{
-    margin-top: 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: $gray1;
-
-    &__header{
-        display: flex;
-        justify-content: space-between;
-        width: $default-body-width; 
-        height: 100px;
-        padding: 12px 0 12px 0;
-
-        &-menu{
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
-        }
-
-        &-list{
-            display: flex;
-            width: 100%;
-            margin-bottom: 12px;
-        }
-
-        &-list-2{
-            display: flex;
-            width: 100%;
-            color: $gray2;
-            text-align: left;
-        }
-
-        &-item{
-            padding: 0 6px 0 6px;
-            font-size: 1.1rem;
-            font-weight: 800;
-            color: #fff;
-            @include hover-cursor();
-
-            &:hover{
-                color: $red1;
-            }
-        }
-
-        &-item-2{
-            padding: 0 6px 0 6px;
-            font-size: .8rem;
-            font-weight: 400;
-            color: $gray2;
-            @include hover-cursor();
-
-            &:hover{
-                opacity: .6;
-            }
-        }
-    }
-
-    &__body{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        background-color: $gray3;
-        padding: 24px;
-
-        &-box{
-            display: flex;
-            width: $default-body-width;
-        }
-
-        &-header{
-            font-size: 1.5rem;
-            color: $gray2;
-            padding: 12px 0 12px 0;
-        }
-
-        p{
-            font-size: .8rem;
-            color: #aaa;
-            line-height: 1.5;
-
-            strong{
-                font-weight: 800;
-            }
-
-           
-
-        }
-
-        &-right{
-            width: 50%;
-        }
-
-        &-left{
-            width: 50%;
-        }
-
-        &-wrapper{
-            display: flex;
-            align-items: center;
-            line-height: 1.5;
-
-            img{
-                opacity: .3;
-                margin-right: 5px;
-                filter: grayscale(90%);
-            }
-
-            a{
-                font-size: .8rem;
-                color: #f0f0f0;
-            }
-        }
-    }
-    
-
-}

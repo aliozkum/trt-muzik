@@ -1,0 +1,125 @@
+.footer{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $gray1;
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        width: $defaultBodyWidth; 
+        height: 100px;
+        padding: 12px 0 12px 0;
+
+        @media screen and (max-width: 820px) {
+            flex-direction: column;
+            height: 200px;
+        }
+
+        &-menu{
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+
+        &-list{
+            display: flex;
+            width: 100%;
+            margin-bottom: 12px;
+        }
+
+        &-list-2{
+            display: flex;
+            width: 100%;
+            color: $gray2;
+            text-align: left;
+        }
+
+        &-item{
+            padding: 0 6px 0 6px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #fff;
+            @include hover-cursor();
+
+            @media screen and (max-width: 820px) {
+                font-size: clamp(12px,2vw,24px)
+            }
+
+            &:hover{
+                color: $red1;
+            }
+        }
+
+        &-item-2{
+            padding: 0 6px 0 6px;
+            font-size: .8rem;
+            font-weight: 400;
+            color: $gray2;
+            @include hover-cursor();
+
+            &:hover{
+                opacity: .6;
+            }
+        }
+    }
+
+    &__body{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: $gray3;
+        padding: 24px;
+
+        &-box{
+            display: flex;
+            width: $defaultBodyWidth;
+            @media screen and (max-width: 820px) {
+                flex-direction: column;
+            }
+        }
+
+        &-header{
+            font-size: 1.5rem;
+            color: $gray2;
+            padding: 12px 0 12px 0;
+        }
+
+        p{
+            font-size: .8rem;
+            color: #aaa;
+            line-height: 1.5;
+
+            strong{
+                font-weight: 800;
+            }
+        }
+
+        &-right{
+            width: 50%;
+            padding: 6px;
+        }
+
+        &-left{
+            width: 50%;
+            padding: 6px;
+        }
+
+        &-wrapper{
+            display: flex;
+            align-items: center;
+            line-height: 1.5;
+
+            img{
+                width: 12px;
+                margin-right: 5px;
+            }
+
+            a{
+                font-size: .8rem;
+                color: #f0f0f0;
+            }
+        }
+    }
+}

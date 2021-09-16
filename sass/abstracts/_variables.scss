@@ -1,15 +1,15 @@
-$default-font: "Roboto", sans-serif;
-$default-body-width: 1170px;
+$defaultFont: "Roboto", sans-serif;
+$defaultBodyWidth: clamp(300px,96%,1170px);
 
-$site-search-height: 50px;
-$site-search-width: 200px;
-$site-search-bg-color: #535353;
-$site-search-input-height: 36px;
-$site-search-btn-width: 45px;
-$site-search-btn-bg-color: #3071a9;
+$siteSearchHeight: 50px;
+$siteSearchWidth: 200px;
+$siteSearchBgColor: #535353;
+$siteSearchInputHeight: 36px;
+$siteSearchBtnWidth: 45px;
+$siteSearchBtnBgColor: #3071a9;
 
-$nav-height: 100px;
-$nav-bg-color: #1c1834;
+$navHeight: 100px;
+$navBgColor: #1c1834;
 $red1: #dd293a;
 $gray1: #535353;
 $gray2: #bdbdbd;
@@ -23,4 +23,7 @@ $logo-width: 221px;
 $logo-height: 42px;
 
 $sliderWidth: 100%;
-$sliderHeight: 545px;
+$sliderHeight: auto;
+
+$smallScreenWidth: 700px;
+$middleScreenWidth: 976px;

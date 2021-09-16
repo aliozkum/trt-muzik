@@ -15,15 +15,17 @@
         justify-content: center;
         align-items: center;
         background: rgba(255, 255, 255, 0.8);
-        margin-left: 3px;
+        margin-left: 2px;
         @include hover-cursor();
 
         &:hover{
             background-color: gray;
         }
 
-        a{
-           
+        @media screen and (max-width: 550px) {
+            width: 21px;
+            height: 21px;
+            font-size: 14px;
         }
     }
 }
